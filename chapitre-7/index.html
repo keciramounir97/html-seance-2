@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 7 — Les icônes</title>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 720px; margin: 24px auto; }
+        .row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>Deux façons d'afficher une icône</h1>
+
+    <h2>1) Image (img) — taille avec width / height</h2>
+    <div class="row">
+        <img src="icones/html-5.png" alt="Icône HTML 5" title="HTML 5" width="64" height="64" class="icon">
+        <img src="icones/html.png" alt="Icône HTML" title="HTML" width="64" height="64" class="icon">
+        <a href="https://www.w3schools.com/html/default.asp">
+            <img src="icones/html.png" alt="Aller sur W3Schools" title="W3Schools HTML" width="24" height="24" class="icon">
+        </a>
+    </div>
+
+    <h2>2) Bibliothèque Akar — taille avec font-size, couleur avec color</h2>
+    <p>
+        <i class="ai-facebook-fill" style="color: #1877f2; font-size: 46px;"></i>
+        <i class="ai-instagram-fill" style="color: #e1306c; font-size: 46px;"></i>
+        <i class="ai-whatsapp-fill" style="color: #25d366; font-size: 46px;"></i>
+    </p>
+
+    <p>Icône dans un lien (réseau du vendeur) :</p>
+    <a href="https://www.facebook.com">
+        <i class="ai-facebook-fill" style="color: #1877f2; font-size: 46px;"></i>
+    </a>
+</body>
+</html>

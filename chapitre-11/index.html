@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 11 — Iframe</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 24px auto; }
+        iframe { max-width: 100%; border: 1px solid #ccc; }
+        .box { margin: 16px 0; }
+    </style>
+</head>
+<body>
+    <h1>Iframe : une page dans la page</h1>
+
+    <h2>1) Fichier local (chapitre 10 — audio)</h2>
+    <div class="box">
+        <iframe src="../chapitre-10/index.html" title="Page audio du chapitre 10" width="560" height="280"></iframe>
+    </div>
+    <p>Je suis dans le chapitre 11, fichier index.html de iframe.</p>
+
+    <h2>2) Vidéo YouTube (lecteur embed)</h2>
+    <div class="box">
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/U2-JPqrALsA"
+            title="Lecteur vidéo YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+</html>

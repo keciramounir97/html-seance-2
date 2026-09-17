@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 5 — Attributs, liens et images</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 720px; margin: 24px auto; }
+        a { color: #04AA6D; }
+        .card { border: 1px solid #ddd; padding: 16px; border-radius: 8px; }
+        .placeholder {
+            width: 280px; height: 160px; background: #04AA6D; color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 8px; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Annonce téléphone</h1>
+
+    <p title="Survole ce paragraphe : c'est l'attribut title (infobulle)">
+        Samsung Galaxy A54 — Oran
+    </p>
+
+    <p>
+        <a href="https://www.google.com">Recherche Google (même onglet)</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.google.com" target="_blank">Google (nouvel onglet)</a>
+    </p>
+
+    <div class="card">
+        <p>Image avec src, alt, title, width et height :</p>
+        <!-- Si le PNG local existe il s'affiche ; sinon le cadre vert reste un exemple visuel -->
+        <img src="images/image.png" alt="Samsung Galaxy A54 à Oran" title="Galaxy A54 — 65 000 DA" width="280" height="160"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="placeholder" style="display:none;">Photo de l'annonce</div>
+    </div>
+</body>
+</html>

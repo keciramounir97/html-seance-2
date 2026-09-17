@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 8 — Mini Ouedkniss</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; color: #222; }
+        header, footer { background: #04AA6D; color: #fff; padding: 16px 24px; }
+        nav ul { display: flex; gap: 16px; list-style: none; padding: 0; margin: 8px 0 0; }
+        nav a { color: #fff; }
+        main { display: grid; grid-template-columns: 1fr 240px; gap: 20px; max-width: 960px; margin: 24px auto; padding: 0 16px; }
+        article {
+            background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 16px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.08);
+        }
+        .photo {
+            height: 140px; background: linear-gradient(135deg, #04AA6D, #059862);
+            border-radius: 8px; color: #fff; display: flex; align-items: center; justify-content: center;
+        }
+        .prix { color: #04AA6D; font-weight: bold; }
+        aside { background: #fff3cd; padding: 16px; border-radius: 10px; height: fit-content; }
+        @media (max-width: 700px) { main { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ouedkniss</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Annonces</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Téléphones à Alger</h2>
+
+            <article>
+                <div class="photo">iPhone 13</div>
+                <h3>iPhone 13 128 Go</h3>
+                <p>Alger Centre — état 9/10</p>
+                <p class="prix">85 000 DA</p>
+                <a href="#">Voir l'annonce</a>
+            </article>
+
+            <article>
+                <div class="photo">Galaxy A54</div>
+                <h3>Samsung Galaxy A54</h3>
+                <p>Hydra — boîte + facture</p>
+                <p class="prix">62 000 DA</p>
+                <a href="#">Voir l'annonce</a>
+            </article>
+        </section>
+
+        <aside>
+            <p><b>Publicité</b></p>
+            <p>Boostez votre annonce pendant 7 jours.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 Mini Ouedkniss — exemple du chapitre 8 (header, nav, main, section, article, aside, footer)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 13 — Symboles et emojis</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 720px; margin: 24px auto; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #04AA6D; color: #fff; }
+        code { background: #f1f1f1; padding: 2px 6px; }
+    </style>
+</head>
+<body>
+    <h1>Symboles HTML et emojis</h1>
+
+    <p>bonjour 😀 ❤️ 🇩🇿 — collés directement grâce à UTF-8</p>
+    <p>Même sourire en code numérique : &#128512;</p>
+
+    <h2>Entités réservées</h2>
+    <p>L'élément p s'écrit <code>&lt;p&gt;&lt;/p&gt;</code></p>
+    <p>Copyright : &copy; 2026 Aboni — Euro : 2500 &euro;</p>
+    <p>Prix sans coupure : 85&nbsp;000&nbsp;DA</p>
+
+    <h2>Tableau de symboles</h2>
+    <table>
+        <tr><th>Entity</th><th>Résultat</th></tr>
+        <tr><td><code>&amp;copy;</code></td><td>&copy;</td></tr>
+        <tr><td><code>&amp;euro;</code></td><td>&euro;</td></tr>
+        <tr><td><code>&amp;lt; &amp;gt; &amp;amp;</code></td><td>&lt; &gt; &amp;</td></tr>
+        <tr><td><code>&amp;ge; &amp;times; &amp;hearts;</code></td><td>&ge; &times; &hearts;</td></tr>
+        <tr><td><code>&amp;#169;</code></td><td>&#169;</td></tr>
+    </table>
+</body>
+</html>

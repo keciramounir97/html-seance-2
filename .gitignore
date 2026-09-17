@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+docs.zip
+.DS_Store
+Thumbs.db
+
+chapitre-9/videos/video.mp4

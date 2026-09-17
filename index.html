@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documentation HTML interactive Aboni — FR / EN / AR — listes, icônes, conteneurs, vidéo, audio, iframe, head, symboles.">
+  <title>Aboni HTML — Documentation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/akar-icons-fonts"></script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-btn" id="btn-menu" type="button">Menu</button>
+    <a class="logo" href="#/"><span>&lt;/&gt;</span> <b id="brand-text">Aboni HTML</b></a>
+    <div class="top-search">
+      <input id="search" type="search" placeholder="Rechercher...">
+    </div>
+    <div class="top-actions">
+      <select id="lang" class="lang-select" aria-label="Language">
+        <option value="fr">FR</option>
+        <option value="en">EN</option>
+        <option value="ar">AR</option>
+      </select>
+      <button class="icon-btn" id="btn-theme" type="button">🌙</button>
+    </div>
+  </header>
+
+  <nav class="greenbar">
+    <a href="#/" id="link-home">Accueil</a>
+    <a href="#/chapitre/revision" id="link-html">HTML</a>
+    <a href="#/exos/revision" id="link-exos">Exercices</a>
+    <a href="#/chapitre/chapitre-6" id="link-lists">Listes</a>
+    <a href="#/chapitre/chapitre-8" id="link-containers">Conteneurs</a>
+    <a href="#/chapitre/chapitre-9" id="link-video">Vidéo</a>
+    <a href="#/chapitre/chapitre-13" id="link-symbols">Symboles</a>
+  </nav>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <h2>HTML</h2>
+      <div class="progress-wrap">
+        <div id="progress-label" style="font-size:12px;margin-bottom:6px;"></div>
+        <div class="progress-bar"><span id="progress-fill"></span></div>
+      </div>
+      <div id="sidebar-list"></div>
+    </aside>
+    <main class="content" id="content"></main>
+  </div>
+
+  <p id="footer-txt" style="text-align:center;padding:20px;color:var(--muted);font-size:13px;"></p>
+
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <div class="pager">
+        <strong>Try it Yourself</strong>
+        <span>
+          <button class="btn small" id="btn-run-try" type="button">Run</button>
+          <button class="btn small ghost" id="btn-close-try" type="button">✕</button>
+        </span>
+      </div>
+      <div class="try-grid">
+        <textarea id="try-code" class="editor"></textarea>
+        <iframe id="try-frame" class="live" sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/ui.js"></script>
+  <script src="js/chapters.js"></script>
+  <script src="js/exercises.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

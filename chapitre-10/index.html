@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 10 — Audio</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 740px; margin: 24px auto; }
+        audio { width: 100%; }
+    </style>
+</head>
+<body>
+    <h1>Message audio du vendeur</h1>
+    <p>Exemple simple : un fichier MP3 + <b>controls</b>.</p>
+
+    <audio src="audio/audio.mp3" controls>
+        Votre navigateur ne prend pas en charge l'audio.
+    </audio>
+
+    <hr>
+
+    <h2>Plusieurs formats (source)</h2>
+    <p>Si le MP3 n'est pas lu, le navigateur passe à OGG puis WAV.</p>
+
+    <audio controls>
+        <source src="audio/audio.mp3" type="audio/mpeg">
+        <source src="audio/audio.ogg" type="audio/ogg">
+        <source src="audio/audio.wav" type="audio/wav">
+        Ton navigateur ne lit pas l'audio HTML5.
+    </audio>
+</body>
+</html>
