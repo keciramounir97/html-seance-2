@@ -21,6 +21,12 @@ Après le déploiement :
 
 ### GitHub Pages
 
+The workflow `.github/workflows/pages.yml` publishes the repo.
+
+Public URL (once Pages is enabled):
+
+`https://keciramounir97.github.io/html-seance-2/`
+
 The original `chapitre-9/videos/video.mp4` is **too large for GitHub/Vercel** (247 MB, limit 100 MB). It stays on your computer only (gitignored). The hosted demo uses the light file `cours.mp4`.
 
 ## Comment ouvrir le cours (étudiants)
